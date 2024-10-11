@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 .container {
@@ -15,70 +16,111 @@ body {
 
 header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px 0;
-    padding-left: 40px; /* Added left padding */
     border-bottom: 2px solid #ddd;
     background-color: #e9ecef;
 }
 
-header img {
-    border-radius: 8px;
+.profile-image {
     width: 150px;
     height: 150px;
-    object-fit: cover;
-    margin-right: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
 }
 
-header .profile {
-    max-width: 600px;
+.header-content {
+    flex-grow: 1;
 }
 
-header .profile h1 {
+header h1 {
     margin: 0;
     font-size: 2em;
     color: #333;
 }
 
-header .profile p {
-    margin: 10px 0 0;
-    color: #090101;
+.summary {
+    margin-top: 10px;
+    font-style: italic;
 }
 
 section {
     padding: 20px;
-    padding-left: 40px; /* Added left padding */
     border-bottom: 2px solid #ddd;
     background-color: #f8f9fa;
 }
 
-section h2 {
-    margin: 0 0 10px;
+h2 {
+    margin: 0 0 15px;
     color: #333;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
-.contact {
-    padding: 20px;
-    padding-left: 40px; /* Added left padding */
-    background-color: #e9ecef;
+.edu-item, .project-item {
+    margin-bottom: 20px;
 }
 
-.contact a {
-    display: block;
-    margin: 10px 0;
+.edu-item p, .project-item p {
+    margin: 5px 0;
+}
+
+.right-align {
+    float: right;
+}
+
+.details {
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 5px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.project-link {
+    float: right;
     color: #0073b1;
     text-decoration: none;
 }
 
-.contact button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0;
-    background-color: #0073b1;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+a {
+    color: #0073b1;
     text-decoration: none;
-    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skills p {
+    margin: 10px 0;
+}
+
+.skills strong, .edu-item strong, .project-item strong {
+    font-weight: bold;
+}
+
+.responsibility ul {
+    margin-top: 10px;
+}
+
+.contact {
+    background-color: #e9ecef;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact ion-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
 }
