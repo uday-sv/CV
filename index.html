@@ -3,50 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uday Sri Vishnu - CV </title>
+    <title>Uday Sri Vishnu Suggula - Resume</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="Uday_Image.jpg" alt="Uday Sri Vishnu Suggula">
-            <div class="profile">
-                <h1>Uday Sri Vishnu</h1>
-                <p>I'm a Computer Science Engineering student eager to explore the world of technology. I have a strong aptitude for learning and a passion for problem-solving. I'm eager to get hands-on experience, to develop my skills, and contribute to innovative projects while being part of a supportive team.</p>
+            <img src="Uday_Image.jpg" alt="Uday Sri Vishnu Suggula" class="profile-image">
+            <div class="header-content">
+                <h1>Uday Sri Vishnu Suggula</h1>
+                <p class="summary">I'm a Computer Science Engineering student eager to explore the world of technology. I have a strong aptitude for learning and a passion for problem-solving. I'm eager to get hands-on experience, to develop my skills, and contribute to innovative projects while being part of a supportive team.</p>
             </div>
         </header>
-        <section>
-            <h2>Education</h2>
-            <p><strong>Vellore Institute of Technology, Chennai</strong><br>
-               B Tech in CSE with AI & ML<br>
-               Present, CGPA: 8.47</p>
-            <p><strong>Nirmala Junior College</strong><br>
-               Intermediate, 2021<br>
-               Marks: 982/1000</p>
-            <p><strong>Narayana Group of Schools</strong><br>
-               Secondary School, 2019<br>
-               CGPA: 9.8</p>
+
+        <section class="education">
+            <h2>EDUCATION</h2>
+            <div class="edu-item">
+                <p><strong>Vellore Institute of Technology, Chennai</strong> <span class="right-align">2021 - 2025</span></p>
+                <p class="details">B.Tech in Computer Science and Engineering specialisation in AI and ML <span class="right-align">CGPA: 8.43</span></p>
+            </div>
+            <div class="edu-item">
+                <p><strong>Nirmala Junior College, Mangalagiri</strong> <span class="right-align">2019 - 2021</span></p>
+                <p class="details">Higher Secondary School / 12th - MPC <span class="right-align">Percentage: 98.2%</span></p>
+            </div>
+            <div class="edu-item">
+                <p><strong>Narayana School, Repalle</strong> <span class="right-align">2018 - 2019</span></p>
+                <p class="details">Secondary School / 10th <span class="right-align">CGPA: 9.8</span></p>
+            </div>
         </section>
-        <section>
-            <h2>Skills</h2>
-            <p><strong>Programming Languages:</strong> Python, C++</p>
-            <p>Familiar with Machine Learning concepts and techniques</p>
+
+        <section class="skills">
+            <h2>SKILLS</h2>
+            <p><strong>Languages:</strong> C, C++, Python, HTML, CSS, JavaScript</p>
+            <p><strong>Libraries:</strong> Pandas, NumPy, TensorFlow, Scikit-Learn</p>
+            <p><strong>Tools:</strong> Linux, Git, Github, VsCode</p>
+            <p><strong>Databases:</strong> MySQL, ChromaDb (Vector Database)</p>
         </section>
-        <section>
-            <h2>Projects</h2>
-            <p><strong>Disease Prediction Using Machine Learning</strong><br>
-               Utilized KNN algorithm for accurate disease classification based on symptoms input, achieving high prediction accuracy.</p>
+
+        <section class="projects">
+            <h2>PROJECTS</h2>
+            <div class="project-item">
+                <p><strong>Accountant Chatbot using RAG Pipeline</strong> <a href="https://github.com/uday-sv/RAG-Pipeline-using-Gemini-API" class="project-link">GitHub</a></p>
+                <p>Chatbot trained on Financial data, implemented using Gemini API.</p>
+                <ul>
+                    <li>Utilizes a Chroma vector database to store and retrieve relevant document chunks based on embeddings.</li>
+                    <li>Facilitates context-based querying and generates responses using Google Generative AI.</li>
+                    <li>Key Features: Automatic PDF processing, document chunking, and retrieval of optimal content to answer user queries.</li>
+                    <li>Technology Used: Python, ChromaDB, Gemini API.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <p><strong>Disease Prediction Using Machine Learning</strong> <a href="https://ml-disease-prediction.onrender.com/" class="project-link">Website</a></p>
+                <p>Predicts diseases using KNN with a Flask web interface.</p>
+                <ul>
+                    <li>Developed a KNN implementation using Python to effectively categorize diseases according to their symptoms.</li>
+                    <li>Utilized data preprocessing methods to enhance the model and achieved a prediction accuracy of 90.4%.</li>
+                    <li>Developed a web interface using Flask for user interaction and result visualization.</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <p><strong>Team Project: Blogging Platform - MERN Stack</strong> <a href="https://github.com/uday-sv/BlogStream-MERN" class="project-link">GitHub</a></p>
+                <ul>
+                    <li>Designed and developed a user-friendly platform for publishing and managing blog content.</li>
+                    <li>Collaborated with team members to implement CRUD operations and user authentication using MongoDB, ReactJS, NodeJS, and ExpressScript.</li>
+                    <li>Participated in integrating social media features to enhance user engagement.</li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2>Languages</h2>
-            <p><strong>English:</strong> Professional Proficiency</p>
-            <p><strong>Telugu:</strong> Native Proficiency</p>
+
+        <section class="responsibility">
+            <h2>POSITION OF RESPONSIBILITY</h2>
+            <p><strong>Photographer & Volunteer | National Social Service, VIT Chennai</strong></p>
+            <ul>
+                <li>Captured moments and documented events as a photographer for college activities.</li>
+                <li>Organized and participated in various social service activities, including community clean-up drives, health awareness campaigns, and educational programs for underprivileged children in the local community.</li>
+            </ul>
         </section>
+
         <section class="contact">
-            <h2>Contact</h2>
-            <p><strong>Phone:</strong> +91 8341424509</p>
-            <p><strong>Email:</strong> <a href="mailto:udaysrivishnu@gmail.com" target="_blank">udaysrivishnu@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/uday-suggula-51b614261/" target="_blank">Uday Suggula LinkedIn</a></p>
+            <h2>CONTACT</h2>
+            <p><ion-icon name="mail-outline"></ion-icon> <a href="mailto:udaysrivishnu@gmail.com">udaysrivishnu@gmail.com</a></p>
+            <p><ion-icon name="call-outline"></ion-icon> (+91) 8341424509</p>
+            <p><ion-icon name="logo-linkedin"></ion-icon> <a href="https://www.linkedin.com/in/uday-suggula-51b614261/">Uday Suggula</a></p>
+            <p><ion-icon name="logo-github"></ion-icon> <a href="https://github.com/uday-sv">uday-sv</a></p>
         </section>
     </div>
 </body>
